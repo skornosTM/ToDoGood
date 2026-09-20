@@ -1,0 +1,73 @@
+.backgraund_field {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(var(--bg-outer));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(var(--text));
+}
+
+.map_buttoon {
+    height: 45px;
+    width: 45px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-w) solid rgb(var(--accent-dim));
+    background: transparent;
+    color: rgb(var(--accent-bright));
+    transition: all var(--anim) ease;
+}
+
+.map_buttoon:hover,
+.map_buttoon.is-active {
+    border-color: rgb(var(--accent));
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent));
+}
+
+.map_field {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 0;
+    width: 64px;
+    height: 95vh;
+    background-color: rgb(var(--bg-outer));
+}
+
+.active_field {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(var(--bg-panel));
+    border-radius: var(--radius);
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent));
+    border: var(--border-w) solid rgb(var(--accent));
+    transition: all var(--anim) ease;
+    overflow: hidden;
+}
+
+.active_field:hover {
+    box-shadow: 0 0 calc(var(--glow-size) + 6px) rgb(var(--accent));
+}
+
+.default_map {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#PixelDoneIcon {
+    width: 45px;
+    height: 45px;
+    border: var(--border-w) solid rgb(var(--accent-dim));
+    border-radius: var(--radius);
+}

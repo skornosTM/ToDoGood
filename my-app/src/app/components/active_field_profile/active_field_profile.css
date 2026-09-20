@@ -1,0 +1,140 @@
+.active_field_profile {
+    display: flex;
+    width: min(720px, 86%);
+    height: min(460px, 78%);
+    border-radius: var(--radius);
+    background-color: rgb(var(--bg-card));
+    border: var(--border-w) solid rgb(var(--accent-dim));
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent-dim)), 0 0 var(--glow-size) inset rgb(var(--accent-dim));
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    color: rgb(var(--text));
+}
+
+.active_field_profile_main {
+    width: 35%;
+    height: 90%;
+}
+
+.active_field_profile_main_avatar {
+    width: 100%;
+    height: 65%;
+    border: 1px solid rgb(var(--line));
+    border-radius: var(--radius) var(--radius) 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+}
+
+.active_field_profile_main_avatar_photo {
+    width: 110px;
+    height: 110px;
+    border: var(--border-w) solid rgb(var(--accent-dim));
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent-dim));
+    border-radius: 50%;
+    background-color: rgb(var(--bg-soft));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.active_field_profile_main_avatar_name {
+    font-size: calc(1.6rem * var(--font-scale));
+    color: rgb(var(--accent));
+}
+
+.active_field_profile_main_progress {
+    width: 100%;
+    height: 35%;
+    border: 1px solid rgb(var(--line));
+    border-radius: 0 0 var(--radius) var(--radius);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+}
+
+.active_field_profile_main_progress_name_number,
+.active_field_profile_main_progress_name_progress,
+.active_field_profile_main_avatar_info,
+.active_field_profile_awards_awards {
+    font-family: monospace;
+    color: rgb(var(--accent-bright));
+}
+
+.active_field_profile_main_progress_name_number {
+    font-size: 1.5rem;
+}
+
+.active_field_profile_main_progress_name_progress,
+.active_field_profile_main_avatar_info,
+.active_field_profile_awards_awards {
+    font-size: 1.6rem;
+}
+
+.active_field_profile_main_progress_bar {
+    height: 10px;
+    width: 90%;
+    background-color: rgb(var(--bg-outer));
+    border-radius: 20px;
+    border: 1.5px solid rgb(var(--accent-dim));
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent-dim));
+}
+
+.active_field_profile_main_progress_bar_done {
+    border-radius: 20px;
+    height: 100%;
+    background-color: rgb(var(--accent));
+    box-shadow: 0 0 var(--glow-size) rgb(var(--accent-dim));
+}
+
+.active_field_profile_awards {
+    width: 52%;
+    height: 83%;
+    border: 1px solid rgb(var(--line));
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+.active_field_profile_award_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 85%;
+    width: 100%;
+}
+
+.active_field_profile_award_list ul {
+    margin: 0;
+    padding: 0 18px;
+    line-height: 1.8;
+}
+
+.active_field_profile_exit {
+    position: absolute;
+    cursor: pointer;
+    transition: all var(--anim) ease;
+    top: 8px;
+    right: 10px;
+    opacity: 0.45;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+.active_field_profile_exit:hover {
+    opacity: 0.9;
+}

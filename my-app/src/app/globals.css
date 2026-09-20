@@ -1,0 +1,77 @@
+.theme-root {
+  --bg-outer: 26, 28, 35;
+  --bg-panel: 255, 255, 255;
+  --bg-sidebar: 245, 246, 248;
+  --bg-card: 255, 255, 255;
+  --bg-soft: 235, 235, 235;
+  --text: 20, 22, 26;
+  --text-muted: 110, 116, 124;
+  --line: 210, 214, 218;
+  --accent: 34, 197, 94;
+  min-height: 100vh;
+  width: 100%;
+  color: rgb(var(--text));
+  font-family: monospace;
+  font-size: calc(16px * var(--font-scale, 1));
+}
+
+.theme-root[data-theme="night"] {
+  --bg-outer: 26, 28, 35;
+  --bg-panel: 22, 24, 30;
+  --bg-sidebar: 18, 20, 26;
+  --bg-card: 32, 34, 42;
+  --bg-soft: 28, 30, 38;
+  --text: 240, 242, 245;
+  --text-muted: 150, 156, 166;
+  --line: 48, 54, 62;
+}
+
+.theme-root[data-theme="day"] {
+  --bg-outer: 232, 236, 240;
+  --bg-panel: 255, 255, 255;
+  --bg-sidebar: 246, 247, 250;
+  --bg-card: 255, 255, 255;
+  --bg-soft: 238, 240, 244;
+  --text: 22, 24, 28;
+  --text-muted: 108, 114, 122;
+  --line: 220, 224, 230;
+}
+
+.theme-root[data-contrast="1"] {
+  --text-muted: var(--text);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(26, 28, 35);
+}
+
+/* Allow scroll on kanban page */
+.kanban-page {
+  overflow: hidden;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Градиент для галочки -->
+    <linearGradient id="pixelGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87" />
+      <stop offset="100%" stop-color="#60EFFF" />
+    </linearGradient>
+
+    <!-- Тень для объема -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Скругленный фон -->
+  <rect width="512" height="512" rx="112" fill="#1A1C23"/>
+
+  <!-- Внутренний пиксельный чекбокс (Контур) -->
+  <g filter="url(#shadow)">
+    <!-- Внешняя пиксельная рамка плашки -->
+    <path d="
+      M 112 112 H 400 V 400 H 112 Z
+      " fill="#252A34"/>
+
+    <!-- Пиксельная галочка (Pixel Checkmark) -->
+    <!-- Каждая секция состоит из сетки 32x32 пикселя -->
+    <path d="
+      M 160 256 h 32 v 32 h -32 z
+      M 192 288 h 32 v 32 h -32 z
+      M 224 320 h 32 v 32 h -32 z
+      M 256 352 h 32 v 32 h -32 z
+      M 288 320 h 32 v 32 h -32 z
+      M 320 288 h 32 v 32 h -32 z
+      M 352 256 h 32 v 32 h -32 z
+      M 384 224 h 32 v 32 h -32 z
+      M 416 192 h 32 v 32 h -32 z
+    " fill="url(#pixelGrad)"/>
+
+    <!-- Пиксельные блики / Искорки победы -->
+    <!-- Искорка 1 (слева вверху) -->
+    <path d="M 128 160 h 16 v 16 h -16 z M 144 144 h 16 v 48 h -16 z M 160 160 h 16 v 16 h -16 z" fill="#FFF" opacity="0.9"/>
+    
+    <!-- Искорка 2 (справа внизу) -->
+    <path d="M 368 368 h 12 v 12 h -12 z" fill="#60EFFF" opacity="0.8"/>
+    <path d="M 400 320 h 16 v 16 h -16 z" fill="#00FF87" opacity="0.8"/>
+  </g>
+</svg>
