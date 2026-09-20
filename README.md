@@ -153,12 +153,19 @@ npm run dev
 
 </div>
 
+<div align="center">
+
+| Способ связи | Контакт |
+|:------------:|:-------:|
+| 🐙 **GitHub** | [skornosTM](https://github.com/skornosTM) |
+| ✉️ **Почта** | [alek.efremov@icloud.com](mailto:alek.efremov@icloud.com) |
+
+</div>
+
 ---
 
 <div align="center">
 
 ### ⭐ Если вам понравился проект — поставьте звезду!
-
-**Сделано с ❤️ командой skornosTM**
 
 </div>
