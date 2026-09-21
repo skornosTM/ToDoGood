@@ -162,7 +162,6 @@ npm run dev
 
 </div>
 ---
-zakharov.platon17@gmail.com
 <div align="center">
 
 ### ⭐ Если вам понравился проект — поставьте звезду!
