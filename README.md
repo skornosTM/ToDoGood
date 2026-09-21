@@ -153,8 +153,16 @@ npm run dev
 
 </div>
 
----
+<div align="center">
 
+| Способ связи | Контакт |
+|:------------:|:-------:|
+| 🐙 **GitHub** | [zakharov17platon](https://github.com/zakharov17platon) |
+| ✉️ **Почта** | [zakharov.platon17@gmail.com](mailto:zakharov.platon17@gmail.com) |
+
+</div>
+---
+zakharov.platon17@gmail.com
 <div align="center">
 
 ### ⭐ Если вам понравился проект — поставьте звезду!
